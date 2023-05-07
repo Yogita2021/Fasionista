@@ -1,0 +1,72 @@
+#ProductContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  row-gap: 30px;
+
+  margin: 60px;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 70%;
+}
+#ProductContainer > div > h4,
+h6,
+p {
+  padding-left: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 570;
+}
+
+#ProductContainer > div > p {
+  font-family: "Poppins", sans-serif;
+  color: #003380;
+}
+
+#ProductContainer > div > h4:hover {
+  color: red;
+  cursor: pointer;
+}
+#ProductContainer > div > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3px;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+
+  margin-bottom: 5px;
+}
+#ProductContainer button {
+  margin-left: 125px;
+
+  cursor: pointer;
+  font-family: inherit;
+
+  font-size: 14px;
+  /* border: 0px; */
+  border: 1px solid black;
+  border-radius: 0px;
+  background: transparent;
+  padding: 7px;
+  font-weight: 400;
+
+  text-transform: none;
+  text-align: center;
+  /* text-decoration: none; */
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+#ProductContainer button:hover {
+  background-color: #b9f3fc;
+  color: black;
+}
+
+#ProductContainer > div {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  height: 580px;
+}

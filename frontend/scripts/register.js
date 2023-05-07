@@ -10,7 +10,7 @@ function googlepage() {
 }
 // registration
 const url = "http://localhost:3030";
-const form = document.querySelector("form");
+const form = document.getElementById("form1");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   let obj = {

@@ -8,6 +8,7 @@ const productSchema = mongoose.Schema(
     price: { type: Number, require: true },
     category: { type: String, require: true },
     color: { type: String, require: true },
+    authorID: String,
   },
   {
     versionKey: false,
@@ -23,5 +24,6 @@ const productSchema = mongoose.Schema(
 // }
 
 const ProductModel = mongoose.model("product", productSchema);
+const WishListModel = mongoose.model("wishlistProduct", productSchema);
 
-module.exports = { ProductModel };
+module.exports = { ProductModel, WishListModel };
