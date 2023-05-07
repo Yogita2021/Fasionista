@@ -39,7 +39,7 @@ Wishlish Section👇
 
 Payment Section 👇
 
-![image](./frontend/images/payment.png)
+![image](./frontend/images/pay.png)
 
 Payment Confirmation👇
 
