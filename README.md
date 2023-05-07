@@ -1,44 +1,48 @@
 # wrong-mother-4289
 
-![Logo](./frontend/images/Screenshot 2023-05-04 191954.png)
+![Logo](./frontend/images/Screenshot%202023-05-04%20191954.png)
 
 # [Fationista]()
 
 It's E-commerce website Where you can buy stuff
 especially for Clothing stuff,It's clone of [myntra](https://www.myntra.com/?utm_source=dms_google&utm_medium=searchbrand_cpc&utm_campaign=dms_google_searchbrand_cpc_Search_Brand_Myntra_Brand_India_BM_TROAS_SOK&gclid=Cj0KCQjw9deiBhC1ARIsAHLjR2Ae40HF_2DoPBpsimPxx79jWjTn0H12H7yDLg0517svWESw5II7hi8aAhfuEALw_wcB)website.
 
-** Problem statement**
-
-Our Problem statement is creating a pixel-perfect clone of [Zee5](https://www.zee5.com/). Previously we did a clone of a few web pages but in this problem, we were supposed to make pages dynamic.
-
 ** The Idea**
 
 We are pursuing a Full Stack Web Development course at Masai school, In Masai school, we have given a project to clone myntra website. It was a pretty good project to work on. Let's look at how I designed it
 
 Home Page 👇
-image
+
 ![image](./frontend/images/homepage1.png)
-[image](./frontend/images/homepage2.png)
-[image](./frontend/images/homepage3.png)
+![image](./frontend/images/homepage2.png)
+![image](./frontend/images/homepage3.png)
 
 Login Page 👇
+
 ![image](./frontend/images/loginpage.png)
 
 Register Page 👇
+
 ![image](./frontend/images/register.png)
 
 Product page👇
+
 ![image](./frontend/images/productpage.png)
 
-Cart page👇
+Cart Section👇
+
 ![image](./frontend/images/cart.png)
 
 Wishlish Section👇
+
 ![image](./frontend/images/wishlist.png)
+
 Payment Section 👇
+
 ![image](./frontend/images/payment.png)
 
 Payment Confirmation👇
+
 ![image](./frontend/images/paymentcon.png)
 
 ## 🛠 Tools
