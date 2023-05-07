@@ -1,0 +1,86 @@
+.heading {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+#divider {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+#Container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+#Container > div {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+img {
+  width: 100%;
+}
+#Container > div > h4,
+p {
+  padding-left: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 570;
+}
+#Container > div > p {
+  font-family: "Poppins", sans-serif;
+  color: #003380;
+}
+#Container > div > h4:hover {
+  color: red;
+  cursor: pointer;
+}
+#Container > div > button {
+  margin-left: 13px;
+  padding: 8px;
+}
+#Container > div > button:hover {
+  background-color: #b9f3fc;
+  color: black;
+}
+
+#Container > div > span {
+  margin-left: 13px;
+}
+#payment {
+  /* border: 2px solid red; */
+  padding-left: 10px;
+  padding-right: 10px;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  height: 580px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+#payment button {
+  display: block;
+  margin: auto;
+  width: 300px;
+  height: 28px;
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+  margin-bottom: 20px;
+}
+#btn {
+  background-color: white;
+  color: black;
+  border: solid 0.2px black;
+}
+#inc {
+  background-color: white;
+  color: black;
+  border: solid 0.2px black;
+}

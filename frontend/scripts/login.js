@@ -11,7 +11,7 @@ function googlepage() {
 // login request
 const url = "http://localhost:3030";
 
-let form = document.querySelector("form");
+let form = document.getElementById("form1");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   let user = {

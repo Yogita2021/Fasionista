@@ -1,0 +1,91 @@
+/* body {
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1;
+} */
+
+.container-1 {
+  width: 55%;
+  margin: 4% auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+h1 {
+  margin-top: 0;
+  text-align: center;
+  color: #003380;
+  font-size: 45px;
+}
+
+h2 {
+  margin-top: 20px;
+  color: #e42529;
+}
+
+h3 {
+  margin-top: 20px;
+  color: #e42529;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #003380;
+  font-weight: bold;
+}
+
+.input[type="text"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #333;
+}
+
+button[type="submit"] {
+  background-color: #e42529;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  width: 20%;
+  margin: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+#payment-successful {
+  text-align: center;
+}
+
+#payment-successful img {
+  width: 325px;
+  height: 325px;
+  border-radius: 20px;
+}
+#payment-successful p {
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+}
+
+.form-control {
+  width: 300px;
+}

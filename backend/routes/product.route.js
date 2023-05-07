@@ -5,7 +5,7 @@ const jwt = require("jsonwebtoken");
 const { ProductModel } = require("../model/product.model");
 productRoute.use(express.json());
 const { auth } = require("../middleware/auth");
-
+const { WishListModel } = require("../model/product.model");
 productRoute.get("/", async (req, res) => {
   try {
     const product = await ProductModel.find();
@@ -14,7 +14,7 @@ productRoute.get("/", async (req, res) => {
     res.status(500).json({ msg: "err" });
   }
 });
-
+productRoute.use(auth);
 productRoute.post("/post", async (req, res) => {
   try {
     const product = new ProductModel(req.body);
@@ -24,7 +24,8 @@ productRoute.post("/post", async (req, res) => {
     res.status(500).json({ err: err.message });
   }
 });
-productRoute.use(auth);
+// productRoute.use(auth);
+
 productRoute.patch("/update/:id", async (req, res) => {
   try {
     const { id } = req.params;
@@ -51,6 +52,18 @@ productRoute.delete("/delete/:id", async (req, res) => {
     }
   } catch (err) {
     res.status(400).send({ msg: err.message });
+  }
+});
+
+// userSide////////
+productRoute.use(auth);
+productRoute.post("/add", async (req, res) => {
+  try {
+    const wishproduct = new WishListModel(req.body);
+    await wishproduct.save();
+    res.status(200).json({ wishproduct });
+  } catch (err) {
+    res.status(500).json({ err: err.message });
   }
 });
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LoginPage</title>
+    <title>card page</title>
     <!-- icon link -->
     <link
       rel="stylesheet"
@@ -13,11 +13,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="../styles/login.css" />
+    <link rel="stylesheet" href="../styles/card.css" />
     <link rel="stylesheet" href="../styles/navAndFooter.css" />
   </head>
   <body>
-    <!-- nav bar -->
+     <!-- nav bar -->
     <nav>
       <div class="logo">
         <a href="../index.html"> <img
@@ -292,61 +292,40 @@
         </div>
       </div>
     </nav>
-    <!-- registration form -->
-    <!-- <div class="Login">
-      <h2>Login</h2>
-      <div>
-        <form action="">
-          <input type="text" placeholder="Email" id="email" />
-          <input type="text" placeholder="Password" id="password" />
-          <input type="submit" value="Log In" id="btn" />
-        </form>
-      </div>
-      <div class="buttonsY">
-        <button id="loginY" onclick="registerpage()">Register</button>
-        <button id="facebookY" onclick="facebookpage()">
-          Sign in with Facebook
-        </button>
-        <button id="googleY" onclick="googlepage()">Sign in with Google</button>
-      </div>
-    </div> -->
-    <div class="main">
-      <div class="first">
-        <img
-          src="https://sslimages.shoppersstop.com/sys-master/root/hc0/h9d/29839237054494/Ethnic-wear_4-Widgets-Web_best%20of%20brands_hp_190423.jpg"
-          alt=""
-        />
-      </div>
-      <div class="second">
-        <div class="nav">
-          <!-- <a href="./register.html">signup</a> -->
-          <a href="./login.html">login Here</a>
-          <!-- <a href="./homepage.html">homepage</a> -->
+    <!-- card cointainer -->
+     <!-- Shopping Cart -->
+    <p class="heading">Shopping Cart</p>
+    
+        <div id="divider">
+            <div id="Container"></div>
+            <div >
+                <div id="payment">
+                    <br>
+                    <p>Billing Details :</p>
+                <hr>
+                <div class="row">
+                    <p>Cart Total</p>
+                    <p><span id="cart-total">0</span></p>
+                </div>
+                <hr>
+                <div class="row">
+                    <p>Shipping Charges</p>
+                    <p>Free</p>
+                </div>
+                <hr>
+                <div class="row">
+                    <p>Total Amount</p>
+                    <p><span id="cart-total1">0</span></p>
+                </div>
+                <!-- <hr> -->
+                <button id="btn">Place Order</button>
+                <br>
+                </div>
+                
+            </div>
+           
         </div>
-        <hr />
-        <div id="signup">
-          <form id="form1">
-            <input
-              type="text"
-              id="email"
-              placeholder="Enter Your Email"
-              required
-            />
-
-            <input
-              type="text"
-              id="password"
-              placeholder="Enter your password"
-              required
-            />
-            <input type="submit" value="Submit" />
-          </form>
-
-          <!-- <a id="signup" href="register.html">Not a member? Sign up </a> -->
-        </div>
-      </div>
-    </div>
-    <!-- footer part -->
+      <!-- footer part -->
     <footer>
       <div class="container">
         <div class="row">
@@ -418,4 +397,4 @@
     </footer>
   </body>
 </html>
-<script src="../scripts/login.js"></script>
+<script src="../scripts/card.js"></script>
