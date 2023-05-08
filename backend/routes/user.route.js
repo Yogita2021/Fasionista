@@ -4,7 +4,67 @@ const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const userRoute = express.Router();
 const { UserModel } = require("../model/user.model");
-// userRoute.use(express.json);
+/**
+ * @swagger
+ * components:
+ *   schema:
+ *      Users:
+ *        type: object
+ *        properties:
+ *          id:
+ *            type: string
+ *            description: The auto-generated id of the product
+ *          firstname:
+ *            type: string
+ *            description: firstname of the user
+ *          lastname:
+ *            type: string
+ *            description: lastname of the user
+ *          email:
+ *            type: string
+ *            description: email of the user
+ *          password:
+ *            type: integer
+ *            description: password of that user
+ *
+ */
+
+/**
+ * @swagger
+ * tags:
+ *  name: Users
+ *  description: All the API routes related to Users
+ */
+
+/**
+ * @swagger
+ * /users/register:
+ *   post:
+ *     summary: This will add the new user into the database
+ *     tags: [Users]
+ *     description: returns the added users
+ *     respones:
+ *           200:
+ *               description: New user Added in database
+ *           400:
+ *               description: Incorrect Request!
+ *
+ */
+
+/**
+ * @swagger
+ * /users/login:
+ *   post:
+ *     summary: This will login user in the database
+ *     tags: [Users]
+ *     description: returns the added users
+ *     respones:
+ *           200:
+ *               description: Login successfull!
+ *           400:
+ *               description: Incorrect Request!
+ *
+ */
 
 // user-registeration route
 userRoute.post("/register", async (req, res) => {
