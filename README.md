@@ -78,6 +78,10 @@ No, You Can't, first Have to login
 
 Of Course, You Can also use COD and even Debit Card
 
+#### Is it responsing or not ??
+
+Yes, It's totally responsive
+
 ## Support
 
 For support, email maneyogita2021@gmail.com or join our Slack channel.
