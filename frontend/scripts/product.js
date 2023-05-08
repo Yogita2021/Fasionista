@@ -34,20 +34,23 @@ searchForm.addEventListener("submit", (e) => {
 });
 //
 let apiProduct = document.getElementById("apiProduct");
+
 let dataArray = [];
 let paginationData = [];
 let categoryData = [];
-let Page = 1;
+let page = 1;
+const page_size = 12;
 
 const url = "http://localhost:3030";
 
-fetch(`${url}/product`)
+fetch(`${url}/product/`)
   .then((res) => res.json())
   .then((data) => {
-    console.log(data.product);
+    // console.log(data.product);
     dataArray = data.product;
-    console.log(dataArray);
+    // console.log(dataArray);
     paginationData = data.product;
+
     display(dataArray);
   });
 
@@ -86,9 +89,6 @@ function getCard(_id, brand, price, description, image) {
   return card;
 }
 
-function getButton(text, id) {
-  return `<button class="pagination-btn" data-page-Number=${id}>${text}</button>`;
-}
 // add to cart functionality////////////////////////////////////////
 let logedUser = localStorage.getItem("token") || "";
 console.log(logedUser);
@@ -475,3 +475,5 @@ desc.addEventListener("click", function () {
   }
   display(paginationData);
 });
+// pagination/////////
+// let paginationDiv = document.getElementById("paginationDiv");

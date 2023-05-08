@@ -46,3 +46,20 @@ function showSlides3() {
   slides3[slideIndex3 - 1].style.display = "block";
   setTimeout(showSlides3, 2000);
 }
+// logout functionality
+
+let currentUser = localStorage.getItem("token") || "";
+let LogoutBtn = document.getElementById("LogoutBtn");
+
+if (currentUser.length == 0) {
+  LogoutBtn.style.visibility = "hidden";
+} else {
+  LogoutBtn.style.visibility = "visible";
+}
+
+LogoutBtn.addEventListener("click", () => {
+  currentUser = "";
+  localStorage.removeItem("token");
+  LogoutBtn.style.visibility = "hidden";
+  window.location.href = "./html/login.html";
+});

@@ -140,6 +140,8 @@
     "string-width": "^4.2.3",
     "strip-ansi": "^6.0.1",
     "supports-color": "^5.5.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.3",
     "tar": "^6.1.13",
     "to-regex-range": "^5.0.1",
     "toidentifier": "^1.0.1",
