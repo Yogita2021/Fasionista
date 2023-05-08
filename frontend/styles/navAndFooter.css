@@ -143,6 +143,8 @@ form > button {
   height: 40px;
   margin-top: 20px;
 }
+
+/* footer */
 footer {
   margin-top: 50px;
   box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
@@ -225,4 +227,44 @@ li {
 }
 p {
   color: rgb(105, 129, 147);
+}
+
+/* media queries  for footer*/
+@media (max-width: 800px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer-col {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+/* media queries  for navbar*/
+#hambergum {
+  display: none;
+}
+@media (max-width: 1190px) {
+  .dropdown-nav {
+    display: none;
+  }
+  .search {
+    display: none;
+  }
+  #hambergum {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 400px) {
+  .dropdown-nav {
+    display: none;
+  }
+  .search {
+    display: none;
+  }
 }

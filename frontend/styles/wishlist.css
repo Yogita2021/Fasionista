@@ -41,7 +41,7 @@ p {
   margin-bottom: 5px;
 }
 #ProductContainer button {
-  margin-left: 125px;
+  margin-left: 40%;
 
   cursor: pointer;
   font-family: inherit;
@@ -69,4 +69,27 @@ p {
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   height: 580px;
+}
+
+/* media queries */
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  #ProductContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 20px;
+    row-gap: 30px;
+
+    margin: 60px;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 1190px) {
+  #ProductContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 30px;
+
+    margin: 60px;
+  }
 }

@@ -346,3 +346,43 @@ p {
   border-radius: 20px;
   border: 1px solid black;
 }
+
+/* media queries */
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  #main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 5px;
+  }
+  #apiProduct {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-top: 10px;
+    margin-left: 8px;
+  }
+  #productContainer {
+    width: 100%;
+  }
+
+  #filterContainer {
+    width: 100%;
+  }
+  .Card {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    height: 530px;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 1190px) {
+  #apiProduct {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 20px;
+    margin-top: 10px;
+    margin-left: 8px;
+  }
+}

@@ -12,8 +12,9 @@
   display: flex;
   /* border: 1px solid black; */
   width: 50%;
-  margin: 100px 100px 100px 350px;
-  height: 500px;
+  /* margin: 100px 100px 100px 350px; */
+  margin: 3% 20% 5% 25%;
+
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .first {
@@ -25,6 +26,7 @@
 .first > img {
   margin-top: 35px;
   margin-left: 40px;
+  margin-bottom: 35px;
 }
 .first > p {
   margin-left: 50px;
@@ -69,4 +71,19 @@ hr {
 }
 #loginpage {
   margin-left: 100px;
+}
+
+/* media queries */
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 1190px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
 }
