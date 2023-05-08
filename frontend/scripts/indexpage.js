@@ -61,5 +61,6 @@ LogoutBtn.addEventListener("click", () => {
   currentUser = "";
   localStorage.removeItem("token");
   LogoutBtn.style.visibility = "hidden";
-  window.location.href = "./html/login.html";
+  alert("Log out successfully!!");
+  window.location.href = "../html/login.html";
 });
