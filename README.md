@@ -1,7 +1,7 @@
 
 ![Logo](./frontend/images/Screenshot%202023-05-04%20191954.png)
 
-# [Fationista]()
+# [Fashionista]()
 
 It's E-commerce website Where you can buy stuff
 especially for Clothing stuff,It's clone of [myntra](https://www.myntra.com/?utm_source=dms_google&utm_medium=searchbrand_cpc&utm_campaign=dms_google_searchbrand_cpc_Search_Brand_Myntra_Brand_India_BM_TROAS_SOK&gclid=Cj0KCQjw9deiBhC1ARIsAHLjR2Ae40HF_2DoPBpsimPxx79jWjTn0H12H7yDLg0517svWESw5II7hi8aAhfuEALw_wcB) website.
