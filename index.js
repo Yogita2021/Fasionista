@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+require("dotenv").config();
 const swaggerJsdoc = require("swagger-jsdoc");
 const swaggerUi = require("swagger-ui-express");
 const swaggerJSDoc = require("swagger-jsdoc");
@@ -25,16 +26,16 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specification));
 
 app.use(cors());
 require("dotenv").config();
-const { auth } = require("./middleware/auth");
-const { connection } = require("./database/db");
-const { userRoute } = require("./routes/user.route");
-const { productRoute } = require("./routes/product.route");
+const { auth } = require("./backend/middleware/auth");
+const { connection } = require("./backend/database/db");
+const { userRoute } = require("./backend/routes/user.route");
+const { productRoute } = require("./backend/routes/product.route");
 
 app.use("/users", userRoute);
 // app.use(auth);
 app.use("/product", productRoute);
 
-app.listen(3030, async () => {
+app.listen(process.env.PORT, async () => {
   try {
     await connection;
     console.log("Connected  to  database");
